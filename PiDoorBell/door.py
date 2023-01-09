@@ -21,9 +21,9 @@ def toggle():
 
 pygame.mixer.init()
 
-button_sounds = {Button(4): pygame.mixer.Sound("/home/pi/Desktop/door_bell_tones/doorbell-1.wav"),
-Button(17): pygame.mixer.Sound("/home/pi/Desktop/door_bell_tones/doorbell-2.wav"),
-Button(27): pygame.mixer.Sound("/home/pi/Desktop/door_bell_tones/doorbell-3.wav"),}
+button_sounds = {Button(4): pygame.mixer.Sound("/home/pi/Aurum/PiDoorBell/door_bell_tones/doorbell-1.wav"),
+Button(17): pygame.mixer.Sound("/home/pi/Aurum/PiDoorBell/door_bell_tones/doorbell-2.wav"),
+Button(27): pygame.mixer.Sound("/home/pi/Aurum/PiDoorBell/door_bell_tones/doorbell-3.wav"),}
 
 for button, sound in button_sounds.items():
     button.when_pressed = sound.play #play sound
